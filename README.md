@@ -1,2 +1,9 @@
 # sims-age-calculator
-Simple JS based age calculator for Sims 2.
+
+Simple age calculator website thingy for Sims 2.
+
+Have a look at [the demo](http://davistobias.com/sims-age-calculator/)!
+
+All content is released under the [VOL](http://veryopenlicense.com).
+
+Made with ♥ by [Tobias Labs](http://tobiaslabs.com)
