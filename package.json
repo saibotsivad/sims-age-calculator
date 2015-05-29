@@ -1,0 +1,33 @@
+{
+  "name": "sims-age-calculator",
+  "version": "0.0.1",
+  "description": "Simple JS based age calculator for Sims 2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js",
+    "build": "browserify js/index.js -o js/build.js",
+    "watch": "watchify js/index.js -o js/build.js -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saibotsivad/sims-age-calculator.git"
+  },
+  "keywords": [
+    "sims",
+    "sims2"
+  ],
+  "author": "saibotsivad",
+  "license": "VOL",
+  "bugs": {
+    "url": "https://github.com/saibotsivad/sims-age-calculator/issues"
+  },
+  "homepage": "https://github.com/saibotsivad/sims-age-calculator",
+  "devDependencies": {
+    "browserify": "^10.2.1",
+    "tape": "^4.0.0",
+    "watchify": "^3.2.1"
+  },
+  "dependencies": {
+    "ractive": "^0.7.3"
+  }
+}
