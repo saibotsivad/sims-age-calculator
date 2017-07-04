@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -8,54 +7,44 @@
     <meta name=description content="Simple JS based age calculator for Sims 2.">
     <title>DavisTobias.com</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+      .text-muted {
+        opacity: 0.3;
+      }
+      hr {
+        max-width: 10ch;
+      }
+      input.form-control {
+        display: inline-block;
+        max-width: 20ch;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-
-      <div class="row text-align-center">
-        <div class="col-md-offset-3 col-md-6">
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-4 col-lg-4">
           <h1>Sims 2: Age Calculator</h1>
-          <p class="lead">Enter an age from 1 to 64, inclusive:</p>
-          <div id="days-left-insert"></div>
-          <p class="lead">Or, enter days left in adult stage:</p>
-          <div id="age-insert"></div>
+          <main></main>
         </div>
       </div>
-
-      <div class="row text-align-center">
-        <div class="col-md-offset-4 col-md-4">
+      <div class="row text-center">
+        <div class="col-xs-12">
           <hr>
-          <p class="faded-text">All content released under the <a href="http://veryopenlicense.com">Very Open License</a></p>
-          <p class="faded-text">Made with ♥ by <a href="http://tobiaslabs.com">Tobias Labs</a>.</p>
+          <p class="text-muted">
+            All content released under the
+            <a href="http://veryopenlicense.com">Very Open License</a>.
+          </p>
+          <p class="text-muted">
+            Made with ♥ by 
+            <a href="http://tobiaslabs.com">Tobias Labs</a>.
+          </p>
         </div>
       </div>
-
-    <script id="days-left-template" type="text/ractive">
-      <div class="row">
-        <div class="col-md-offset-4 col-md-4">
-          <input type="text" class="form-control" value="{{age}}" placeholder="Age in whole years">
-        </div>
-      </div>
-
-      {{#if stage}}{{#if days}}
-      <h2>{{days}} <small>days left in</small> {{stage}} <small>stage</small></h2>
-      {{/if}}{{/if}}
+    </div>
+    <script src="App.js"></script>
+    <script>
+      new App({ target: document.querySelector('main') })
     </script>
-
-    <script id="age-template" type="text/ractive">
-      <div class="row">
-        <div class="col-md-offset-4 col-md-4">
-          <input type="text" class="form-control" value="{{daysLeft}}" placeholder="Days remaining">
-        </div>
-      </div>
-
-      {{#if years}}
-      <h2>{{years}} <small>years, and</small> {{days}} <small>days old</small></h2>
-      {{/if}}
-    </script>
-
-    <script src="js/build.js"></script>
-
   </body>
 </html>
