@@ -1,5 +1,7 @@
 # sims-age-calculator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/saibotsivad/sims-age-calculator.svg)](https://greenkeeper.io/)
+
 Simple age calculator website thingy for Sims 2.
 
 Have a look at [the demo](http://davistobias.com/sims-age-calculator/)!
